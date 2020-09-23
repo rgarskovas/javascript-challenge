@@ -21,7 +21,7 @@ data.forEach(function(alienReport) {
 // // Step 4: Use d3 to append 1 cell per sighting report value
     var cell = row.append("td");
 // // Step 5: Use d3 to update each cell's text with
-// alien report values
+// sighting data values
     cell.text(value);
   });
 });
@@ -68,6 +68,7 @@ function runEnter() {
 // Get a reference to the table body
   var tbody = d3.select("tbody");
 
+  // at the rows of the filtered data into the table same as above but with filtered
   filteredData.forEach(function(alienReport) {
     console.log(alienReport);
     var row = tbody.append("tr");
